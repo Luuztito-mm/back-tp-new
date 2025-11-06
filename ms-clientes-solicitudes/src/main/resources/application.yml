@@ -2,10 +2,19 @@ spring:
   application:
     name: ms-clientes-solicitudes
 
-  # Esto evita que Spring intente conectarse a una base de datos todavía
-  autoconfigure:
-    exclude:
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_clientes_solicitudes
+    username: postgres
+    password: 641723
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none   # o update si querés que te cree/ajuste tablas
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
 
 server:
   port: 8081

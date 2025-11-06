@@ -6,52 +6,12 @@ spring:
     name: api-gateway
   cloud:
     gateway:
-      server:
-        webflux:
-          routes:
-
-            # --- Clientes y Solicitudes ---
-            - id: ms-clientes-solicitudes
-              uri: http://localhost:8081
-              predicates:
-                - Path=/api/clientes/**
-              filters:
-                - RewritePath=/api/clientes/(?<remaining>.*), /clientes/${remaining}
-
-            # --- Camiones y Transportistas ---
-            - id: ms-camiones-transportistas
-              uri: http://localhost:8082
-              predicates:
-                - Path=/api/camiones/**
-              filters:
-                - RewritePath=/api/camiones/(?<remaining>.*), /camiones/${remaining}
-
-            # --- Depósitos ---
-            - id: ms-depositos
-              uri: http://localhost:8083
-              predicates:
-                - Path=/api/depositos/**
-              filters:
-                - RewritePath=/api/depositos/(?<remaining>.*), /depositos/${remaining}
-
-            # --- Rutas y Tramos ---
-            - id: ms-rutas-tramos
-              uri: http://localhost:8084
-              predicates:
-                - Path=/api/rutas/**
-              filters:
-                - RewritePath=/api/rutas/(?<remaining>.*), /rutas/${remaining}
-
-            # --- Tarifas y Costos ---
-            - id: ms-tarifas-costos
-              uri: http://localhost:8085
-              predicates:
-                - Path=/api/tarifas/**
-              filters:
-                - RewritePath=/api/tarifas/(?<remaining>.*), /tarifas/${remaining}
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
+      routes:
+        - id: camiones
+          uri: http://localhost:8082
+          predicates:
+            - Path=/camiones/**
+        - id: clientes-solicitudes
+          uri: http://localhost:8081
+          predicates:
+            - Path=/solicitudes/**, /eventos-seguimiento/**

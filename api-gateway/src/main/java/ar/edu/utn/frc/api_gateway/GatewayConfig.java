@@ -11,11 +11,27 @@ public class GatewayConfig {
     @Bean
     public RouteLocator customRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
-                // todo lo que entre a /camiones/** → va al microservicio en 8082
+
+                // --- Camiones y Transportistas ---
                 .route("camiones", r -> r
                         .path("/camiones/**")
                         .uri("http://localhost:8082"))
+                
+                // --- Depósitos ---
+                .route("depositos", r -> r
+                        .path("/api/depositos/**")
+                        .filters(f -> f.rewritePath("/api/depositos/(?<remaining>.*)", "/${remaining}"))
+                        .uri("http://localhost:8083"))
+
+                // --- Tarifas y costos ---
+                .route("tarifas", r -> r
+                        .path("/api/tarifas/**")
+                        //.filters(f -> f.rewritePath("/api/tarifas/(?<remaining>.*)", "/${remaining}"))
+                        .uri("http://localhost:8085"))
+
                 .build();
+                
+
     }
 }
 

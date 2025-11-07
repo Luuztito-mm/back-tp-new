@@ -2,14 +2,18 @@ server:
   port: 8083
 
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_depositos
+    username: postgres
+    password: cami_2025
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   application:
     name: ms-depositos
-  autoconfigure:
-    exclude:
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+

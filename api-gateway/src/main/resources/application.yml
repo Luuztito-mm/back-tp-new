@@ -7,11 +7,44 @@ spring:
   cloud:
     gateway:
       routes:
+        # --- Camiones ---
         - id: camiones
           uri: http://localhost:8082
           predicates:
             - Path=/camiones/**
+
+        # --- Clientes y Solicitudes ---
         - id: clientes-solicitudes
           uri: http://localhost:8081
           predicates:
             - Path=/solicitudes/**, /eventos-seguimiento/**
+
+        # --- Depósitos ---
+        - id: ms-depositos
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/depositos/**
+          filters:
+            - RewritePath=/api/depositos/(?<remaining>.*), /${remaining}
+
+        # --- Tarifas y Costos ---
+        - id: ms-tarifas-costos
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/tarifas/**
+          filters:
+            - RewritePath=/api/tarifas/(?<remaining>.*), /${remaining}
+
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

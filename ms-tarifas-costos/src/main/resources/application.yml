@@ -2,14 +2,17 @@ server:
   port: 8085
 
 spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ms_tarifas_costos
+    username: postgres
+    password: cami_2025
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
   application:
     name: ms-tarifas-costos
-  autoconfigure:
-    exclude:
-      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info

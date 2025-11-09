@@ -36,6 +36,9 @@
         <module>api-gateway</module>
         <module>ms-camiones-transportistas</module>
         <module>ms-clientes-solicitudes</module>
+        <module>ms-depositos</module>
+        <module>ms-rutas-tramos</module>
+        <module>ms-tarifas-costos</module>
     </modules>
 
     <build>
@@ -47,7 +50,6 @@
                     <artifactId>spring-boot-maven-plugin</artifactId>
                 </plugin>
 
-                <!-- 👇 este es el que te hace falta -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>

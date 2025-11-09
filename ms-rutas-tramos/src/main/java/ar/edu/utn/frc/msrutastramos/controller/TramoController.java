@@ -26,7 +26,7 @@ public class TramoController {
         return tramoService.listar();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id:\\d+}")
     public ResponseEntity<Tramo> obtener(@PathVariable Long id) {
         return tramoService.buscarPorId(id)
                 .map(ResponseEntity::ok)
@@ -51,4 +51,19 @@ public class TramoController {
         double total = tramoService.calcularDistancia(origen, destino);
         return ResponseEntity.ok(total);
     }
+
+    // NUEVO: calcular mejor ruta entre orgen y destino
+    @GetMapping("/mejor-camino")
+    public ResponseEntity<?> mejorCamino(
+            @RequestParam String origen,
+            @RequestParam String destino) {
+        var ruta = tramoService.calcularMejorRuta(origen, destino);
+        if (ruta.getTramos().isEmpty()) {
+            return ResponseEntity.status(404).body(
+                Map.of("message", "No existe un camino entre " + origen + " y " + destino)
+            );
+        }
+        return ResponseEntity.ok(ruta);
+    }
+
 }

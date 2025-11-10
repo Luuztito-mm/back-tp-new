@@ -17,27 +17,31 @@ public class CamionController {
         this.repo = repo;
     }
 
-    // GET /camiones?disponible=true
     @GetMapping
-    public List<Camion> listar(@RequestParam(required = false) Boolean disponible) {
+    public List<Camion> listar(@RequestParam(name = "disponible", required = false) Boolean disponible) {
         if (disponible != null) {
             return repo.findByDisponible(disponible);
         }
         return repo.findAll();
     }
 
-    // POST /camiones
+    @GetMapping("/{id}")
+    public ResponseEntity<Camion> obtener(@PathVariable Integer id) {
+        return repo.findById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
+    @GetMapping("/dominio/{dominio}")
+    public ResponseEntity<Camion> porDominio(@PathVariable String dominio) {
+        return repo.findByDominio(dominio)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
+
     @PostMapping
     public ResponseEntity<Camion> crear(@RequestBody Camion camion) {
         Camion guardado = repo.save(camion);
         return ResponseEntity.ok(guardado);
-    }
-
-    // GET /camiones/{dominio}
-    @GetMapping("/{dominio}")
-    public ResponseEntity<Camion> obtener(@PathVariable String dominio) {
-        return repo.findById(dominio)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
     }
 }

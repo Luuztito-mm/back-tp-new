@@ -16,7 +16,12 @@ public class GatewayConfig {
                 .route("camiones", r -> r
                         .path("/camiones/**")
                         .uri("http://localhost:8082"))
-                
+                // --- Clientes y Solicitudes ---
+                .route("clientes-solicitudes", r -> r
+                    .path( "/solicitudes/**") // ambos endpoints si los tenés
+                    .filters(f -> f.rewritePath("/(?<remaining>.*)", "/${remaining}"))
+                    .uri("http://localhost:8081")) // puerto del ms-clientes-solicitudes
+              
                 // --- Depósitos ---
                 .route("depositos", r -> r
                         .path("/api/depositos/**")

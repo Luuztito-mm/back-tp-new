@@ -12,7 +12,7 @@ public class GatewayConfig {
     public RouteLocator customRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
 
-                // --- Camiones y Transportistas ---
+                 // --- Camiones y Transportistas ---
                 .route("camiones", r -> r
                         .path("/camiones/**")
                         .uri("http://localhost:8082"))
@@ -20,16 +20,24 @@ public class GatewayConfig {
                 // --- Depósitos ---
                 .route("depositos", r -> r
                         .path("/api/depositos/**")
-                        .filters(f -> f.rewritePath("/api/depositos/(?<remaining>.*)", "/${remaining}"))
+                        .filters(f -> f.rewritePath("/api/depositos/(?<remaining>.*)", "/api/depositos/${remaining}"))
                         .uri("http://localhost:8083"))
 
                 // --- Tarifas y costos ---
                 .route("tarifas", r -> r
                         .path("/api/tarifas/**")
-                        //.filters(f -> f.rewritePath("/api/tarifas/(?<remaining>.*)", "/${remaining}"))
+                        .filters(f -> f.rewritePath("/api/tarifas/(?<remaining>.*)", "/api/tarifas/${remaining}"))
                         .uri("http://localhost:8085"))
 
-                .build();
+                // --- Rutas y Tramos ---
+                .route("rutas", r -> r
+                        .path("/rutas/**")
+                        .filters(f -> f.rewritePath("/rutas/(?<remaining>.*)", "/${remaining}"))
+                        .uri("http://localhost:8084"))
+
+                
+
+              .build();
                 
 
     }

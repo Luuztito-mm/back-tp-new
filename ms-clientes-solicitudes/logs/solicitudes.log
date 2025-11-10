@@ -1,0 +1,248 @@
+2025-11-10 15:10:35,137 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 17416 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-10 15:10:35,138 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:10:35,138 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:10:37,533 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Started MsClientesSolicitudesApplication in 2.73 seconds (process running for 2.943)
+2025-11-10 15:10:37,537 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:10:37.537048
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:10:42,534 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:10:42.534123900]
+2025-11-10 15:10:47,540 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:10:47.540415300]
+2025-11-10 15:10:49,710 INFO  a.e.u.f.m.c.LogDemoController [http-nio-8081-exec-1] - Log INFO de prueba desde clientes-solicitudes
+2025-11-10 15:10:52,545 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:10:52.545305400]
+2025-11-10 15:10:57,548 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:10:57.548244200]
+2025-11-10 15:10:57,568 WARN  a.e.u.f.m.c.LogDemoController [http-nio-8081-exec-5] - Log WARN de prueba desde clientes-solicitudes
+2025-11-10 15:11:02,535 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:11:02.535796200]
+2025-11-10 15:11:05,498 ERROR a.e.u.f.m.c.LogDemoController [http-nio-8081-exec-2] - Log ERROR de prueba desde clientes-solicitudes
+2025-11-10 15:11:07,544 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:11:07.544810100]
+2025-11-10 15:11:12,535 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:11:12.535803]
+2025-11-10 15:21:37,509 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 30156 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-10 15:21:37,510 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:21:37,511 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:21:40,381 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Started MsClientesSolicitudesApplication in 3.34 seconds (process running for 3.571)
+2025-11-10 15:21:40,387 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:21:40.387077600]
+2025-11-10 15:21:45,386 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:21:45.386427400]
+2025-11-10 15:21:50,391 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:21:50.391402400]
+2025-11-10 15:21:55,385 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:21:55.385460600]
+2025-11-10 15:22:00,386 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:22:00.386658400
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:22:05,383 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:22:05.383893800
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:22:10,393 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:22:10.393471400
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:22:15,393 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:22:15.393745800]
+2025-11-10 15:26:02,440 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 21696 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-10 15:26:02,441 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:26:02,441 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:26:05,031 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Started MsClientesSolicitudesApplication in 2.925 seconds (process running for 3.143)
+2025-11-10 15:26:05,034 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:26:05.034043800]
+2025-11-10 15:26:10,042 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:26:10.042373300]
+2025-11-10 15:26:15,045 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:26:15.045310600
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:26:20,038 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:26:20.038879700
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:26:25,036 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:26:25.036762300
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:26:30,044 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:26:30.044005800]
+2025-11-10 15:26:35,044 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:26:35.044305400]
+2025-11-10 15:26:40,042 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:26:40.042358800]
+2025-11-10 15:26:45,034 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:26:45.034263100
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:26:50,035 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:26:50.035959400]
+2025-11-10 15:26:55,030 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:26:55.030757800]
+2025-11-10 15:29:52,083 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 13360 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-10 15:29:52,084 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:29:52,084 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:29:54,455 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Started MsClientesSolicitudesApplication in 2.693 seconds (process running for 2.9)
+2025-11-10 15:29:54,459 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:29:54.459936900]
+2025-11-10 15:29:59,457 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:29:59.457951200
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:30:04,459 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:30:04.459661400
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:30:09,459 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:30:09.459122500]
+2025-11-10 15:30:10,800 INFO  a.e.u.f.m.c.LogDemoController [http-nio-8081-exec-1] - Log INFO de prueba desde clientes-solicitudes
+2025-11-10 15:30:14,457 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:30:14.457962800]
+2025-11-10 15:30:19,464 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:30:19.464841100]
+2025-11-10 15:30:24,460 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:30:24.460177800
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:30:29,462 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:30:29.462602400
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:30:34,463 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-10T15:30:34.463809800]

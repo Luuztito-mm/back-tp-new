@@ -1,0 +1,30 @@
+<configuration>
+
+    <!-- Consola -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Archivo simple -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <!-- cambia el nombre del archivo -->
+        <file>logs/solicitudes.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d %-5level %logger{36} [%thread] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- logger del micro -->
+    <logger name="ar.edu.utn.frc.msclientessolicitudes" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>

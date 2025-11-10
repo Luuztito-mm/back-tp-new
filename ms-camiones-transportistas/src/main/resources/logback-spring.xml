@@ -1,0 +1,31 @@
+<configuration>
+
+    <!-- Consola -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Archivo simple -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <!-- lo guarda en la carpeta logs/ -->
+        <file>logs/camiones.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d %-5level %logger{36} [%thread] - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- tu package -->
+    <logger name="ar.edu.utn.frc.mscamionestransportistas" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
+    </logger>
+
+    <!-- root -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>

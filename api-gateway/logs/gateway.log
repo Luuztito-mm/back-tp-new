@@ -1,0 +1,144 @@
+2025-11-10 15:26:16,675 INFO  o.h.validator.internal.util.Version [background-preinit] - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-10 15:26:16,713 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Starting ApiGatewayApplication using Java 21.0.3 with PID 33760 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway)
+2025-11-10 15:26:16,714 DEBUG a.e.u.f.a.ApiGatewayApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:26:16,714 INFO  a.e.u.f.a.ApiGatewayApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:26:17,324 INFO  o.s.cloud.context.scope.GenericScope [main] - BeanFactory id=d530977e-a50c-3ad5-b5fa-ea1ecf07e70e
+2025-11-10 15:26:17,847 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [After]
+2025-11-10 15:26:17,848 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Before]
+2025-11-10 15:26:17,848 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Between]
+2025-11-10 15:26:17,848 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Cookie]
+2025-11-10 15:26:17,848 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Header]
+2025-11-10 15:26:17,848 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Host]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Method]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Path]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Query]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [ReadBody]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Weight]
+2025-11-10 15:26:17,849 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-11-10 15:26:18,076 INFO  o.s.b.a.e.web.EndpointLinksResolver [main] - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-10 15:26:18,361 INFO  o.s.b.w.e.netty.NettyWebServer [main] - Netty started on port 8080 (http)
+2025-11-10 15:26:18,385 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:26:18.385842100]
+2025-11-10 15:26:18,410 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Started ApiGatewayApplication in 2.097 seconds (process running for 2.429)
+2025-11-10 15:26:28,386 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:26:28.386562400]
+2025-11-10 15:26:38,386 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:26:38.386353100]
+2025-11-10 15:26:48,386 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:26:48.386324300]
+2025-11-10 15:26:49,898 INFO  o.s.b.w.e.netty.GracefulShutdown [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-10 15:26:49,900 INFO  o.s.b.w.e.netty.GracefulShutdown [netty-shutdown] - Graceful shutdown complete
+2025-11-10 15:29:58,399 INFO  o.h.validator.internal.util.Version [background-preinit] - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-10 15:29:58,436 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Starting ApiGatewayApplication using Java 21.0.3 with PID 18252 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway)
+2025-11-10 15:29:58,436 DEBUG a.e.u.f.a.ApiGatewayApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:29:58,437 INFO  a.e.u.f.a.ApiGatewayApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:29:59,041 INFO  o.s.cloud.context.scope.GenericScope [main] - BeanFactory id=d530977e-a50c-3ad5-b5fa-ea1ecf07e70e
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [After]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Before]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Between]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Cookie]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Header]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Host]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Method]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Path]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Query]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [ReadBody]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Weight]
+2025-11-10 15:29:59,530 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-11-10 15:29:59,696 INFO  o.s.b.a.e.web.EndpointLinksResolver [main] - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-10 15:29:59,888 INFO  o.s.b.w.e.netty.NettyWebServer [main] - Netty started on port 8080 (http)
+2025-11-10 15:29:59,912 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:29:59.912919300]
+2025-11-10 15:29:59,942 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Started ApiGatewayApplication in 1.846 seconds (process running for 2.158)
+2025-11-10 15:30:09,913 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:30:09.913771600]
+2025-11-10 15:30:19,915 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:30:19.915399100]
+2025-11-10 15:30:29,918 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:30:29.918431200]
+2025-11-10 15:30:39,909 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:30:39.909596]
+2025-11-10 15:30:49,915 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:30:49.915619800]
+2025-11-10 15:30:59,916 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:30:59.916811300]
+2025-11-10 15:31:09,299 INFO  o.s.b.w.e.netty.GracefulShutdown [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-10 15:31:09,303 INFO  o.s.b.w.e.netty.GracefulShutdown [netty-shutdown] - Graceful shutdown complete
+2025-11-10 15:31:58,944 INFO  o.h.validator.internal.util.Version [background-preinit] - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-10 15:31:58,995 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Starting ApiGatewayApplication using Java 21.0.3 with PID 6672 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway)
+2025-11-10 15:31:58,997 DEBUG a.e.u.f.a.ApiGatewayApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:31:58,997 INFO  a.e.u.f.a.ApiGatewayApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:31:59,615 INFO  o.s.cloud.context.scope.GenericScope [main] - BeanFactory id=d530977e-a50c-3ad5-b5fa-ea1ecf07e70e
+2025-11-10 15:32:00,130 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [After]
+2025-11-10 15:32:00,130 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Before]
+2025-11-10 15:32:00,130 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Between]
+2025-11-10 15:32:00,130 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Cookie]
+2025-11-10 15:32:00,130 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Header]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Host]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Method]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Path]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Query]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [ReadBody]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Weight]
+2025-11-10 15:32:00,131 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-11-10 15:32:00,305 INFO  o.s.b.a.e.web.EndpointLinksResolver [main] - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-10 15:32:00,576 INFO  o.s.b.w.e.netty.NettyWebServer [main] - Netty started on port 8080 (http)
+2025-11-10 15:32:00,606 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:32:00.606222700]
+2025-11-10 15:32:00,637 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Started ApiGatewayApplication in 2.05 seconds (process running for 2.401)
+2025-11-10 15:32:10,609 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:32:10.609126200]
+2025-11-10 15:32:14,900 INFO  o.s.b.w.e.netty.GracefulShutdown [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-10 15:32:14,901 INFO  o.s.b.w.e.netty.GracefulShutdown [netty-shutdown] - Graceful shutdown complete
+2025-11-10 15:33:56,435 INFO  o.h.validator.internal.util.Version [background-preinit] - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-10 15:33:56,486 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Starting ApiGatewayApplication using Java 21.0.3 with PID 17128 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway)
+2025-11-10 15:33:56,486 DEBUG a.e.u.f.a.ApiGatewayApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:33:56,487 INFO  a.e.u.f.a.ApiGatewayApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:33:57,207 INFO  o.s.cloud.context.scope.GenericScope [main] - BeanFactory id=d530977e-a50c-3ad5-b5fa-ea1ecf07e70e
+2025-11-10 15:33:57,752 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [After]
+2025-11-10 15:33:57,752 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Before]
+2025-11-10 15:33:57,752 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Between]
+2025-11-10 15:33:57,753 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Cookie]
+2025-11-10 15:33:57,753 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Header]
+2025-11-10 15:33:57,753 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Host]
+2025-11-10 15:33:57,753 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Method]
+2025-11-10 15:33:57,753 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Path]
+2025-11-10 15:33:57,753 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Query]
+2025-11-10 15:33:57,753 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [ReadBody]
+2025-11-10 15:33:57,754 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-11-10 15:33:57,754 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-11-10 15:33:57,754 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Weight]
+2025-11-10 15:33:57,754 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-11-10 15:33:57,934 INFO  o.s.b.a.e.web.EndpointLinksResolver [main] - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-10 15:33:58,176 INFO  o.s.b.w.e.netty.NettyWebServer [main] - Netty started on port 8080 (http)
+2025-11-10 15:33:58,208 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:33:58.208431200]
+2025-11-10 15:33:58,233 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Started ApiGatewayApplication in 2.21 seconds (process running for 2.525)
+2025-11-10 15:34:08,197 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:34:08.197132300]
+2025-11-10 15:34:18,205 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:34:18.205998700]
+2025-11-10 15:34:28,201 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:34:28.201401700]
+2025-11-10 15:34:31,953 INFO  o.s.b.w.e.netty.GracefulShutdown [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-10 15:34:31,955 INFO  o.s.b.w.e.netty.GracefulShutdown [netty-shutdown] - Graceful shutdown complete
+2025-11-10 15:36:10,717 INFO  o.h.validator.internal.util.Version [background-preinit] - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-10 15:36:10,761 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Starting ApiGatewayApplication using Java 21.0.3 with PID 31188 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\api-gateway)
+2025-11-10 15:36:10,761 DEBUG a.e.u.f.a.ApiGatewayApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-10 15:36:10,762 INFO  a.e.u.f.a.ApiGatewayApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:36:11,379 INFO  o.s.cloud.context.scope.GenericScope [main] - BeanFactory id=d530977e-a50c-3ad5-b5fa-ea1ecf07e70e
+2025-11-10 15:36:11,893 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [After]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Before]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Between]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Cookie]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Header]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Host]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Method]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Path]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Query]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [ReadBody]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [RemoteAddr]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-11-10 15:36:11,895 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [Weight]
+2025-11-10 15:36:11,896 INFO  o.s.c.g.r.RouteDefinitionRouteLocator [main] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-11-10 15:36:12,070 INFO  o.s.b.a.e.web.EndpointLinksResolver [main] - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-10 15:36:12,275 INFO  o.s.b.w.e.netty.NettyWebServer [main] - Netty started on port 8080 (http)
+2025-11-10 15:36:12,299 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:36:12.299559]
+2025-11-10 15:36:12,324 INFO  a.e.u.f.a.ApiGatewayApplication [main] - Started ApiGatewayApplication in 1.934 seconds (process running for 2.233)
+2025-11-10 15:36:20,033 INFO  a.e.u.f.a.c.GatewayLogController [reactor-http-nio-2] - Log INFO desde API Gateway
+2025-11-10 15:36:22,299 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:36:22.299650900]
+2025-11-10 15:36:32,299 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:36:32.299003100]
+2025-11-10 15:36:42,298 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:36:42.298704800]
+2025-11-10 15:36:52,298 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:36:52.298300200]
+2025-11-10 15:37:02,294 INFO  a.e.u.f.a.timer.GatewayLogJobs [scheduling-1] - Gateway heartbeat [2025-11-10T15:37:02.294078600]
+2025-11-10 15:37:05,312 INFO  o.s.b.w.e.netty.GracefulShutdown [SpringApplicationShutdownHook] - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-10 15:37:05,313 INFO  o.s.b.w.e.netty.GracefulShutdown [netty-shutdown] - Graceful shutdown complete

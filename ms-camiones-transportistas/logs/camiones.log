@@ -1,0 +1,481 @@
+2025-11-10 14:09:43,886 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Starting MsCamionesTransportistasApplication using Java 21.0.3 with PID 27796 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas)
+2025-11-10 14:09:43,887 DEBUG a.e.u.f.m.MsCamionesTransportistasApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-10 14:09:43,888 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 14:09:47,781 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Started MsCamionesTransportistasApplication in 4.577 seconds (process running for 4.931)
+2025-11-10 14:10:02,795 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:10:02.795844700
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:10:07,804 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:10:07.803634900
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:10:12,818 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:12.818879700]
+2025-11-10 14:10:17,833 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:10:17.832538100
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:10:22,837 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:22.837017800]
+2025-11-10 14:10:27,846 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:27.846516600]
+2025-11-10 14:10:32,852 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:32.852515400]
+2025-11-10 14:10:37,863 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:37.863457600]
+2025-11-10 14:10:42,866 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:42.866144]
+2025-11-10 14:10:47,882 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:10:47.881500400
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:10:52,911 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:52.911094200]
+2025-11-10 14:10:57,923 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:10:57.923402400]
+2025-11-10 14:11:02,930 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:11:02.930432800]
+2025-11-10 14:11:07,938 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:11:07.938771100]
+2025-11-10 14:11:12,949 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:11:12.948468100]
+2025-11-10 14:11:17,953 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:11:17.952734600
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:11:22,960 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:11:22.960071200]
+2025-11-10 14:11:27,976 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:11:27.976300600]
+2025-11-10 14:11:32,990 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:11:32.989607500
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:11:37,994 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:11:37.994308800
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:11:43,000 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:11:43.000564900]
+2025-11-10 14:11:48,016 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:11:48.016569]
+2025-11-10 14:11:53,026 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:11:53.026062
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:13:35,125 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Starting MsCamionesTransportistasApplication using Java 21.0.3 with PID 29576 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas)
+2025-11-10 14:13:35,126 DEBUG a.e.u.f.m.MsCamionesTransportistasApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-10 14:13:35,127 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 14:13:38,368 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Started MsCamionesTransportistasApplication in 3.744 seconds (process running for 4.072)
+2025-11-10 14:13:53,385 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:13:53.384224400
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:13:58,391 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:13:58.390267300
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:14:03,406 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:14:03.406006900]
+2025-11-10 14:14:08,414 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:14:08.414742900]
+2025-11-10 14:14:13,428 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:14:13.427854600
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:14:18,444 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:14:18.444556800
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:14:23,459 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:14:23.459348300]
+2025-11-10 14:14:28,469 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T14:14:28.469767500
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 14:14:33,473 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T14:14:33.473445100]
+2025-11-10 15:00:24,107 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Starting MsCamionesTransportistasApplication using Java 21.0.3 with PID 14112 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas)
+2025-11-10 15:00:24,108 DEBUG a.e.u.f.m.MsCamionesTransportistasApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-10 15:00:24,109 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:00:26,544 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Started MsCamionesTransportistasApplication in 2.755 seconds (process running for 2.986)
+2025-11-10 15:00:30,705 INFO  a.e.u.f.m.c.LogDemoController [http-nio-8082-exec-1] - Log INFO de prueba desde /logs/info
+2025-11-10 15:00:41,554 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:00:41.554188800]
+2025-11-10 15:00:46,568 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:00:46.568040800]
+2025-11-10 15:00:51,582 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:00:51.582855300]
+2025-11-10 15:00:56,591 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:00:56.590615900
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:01:01,607 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:01:01.607224700]
+2025-11-10 15:01:06,620 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:01:06.620482100]
+2025-11-10 15:01:11,621 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:01:11.621991400
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:01:16,636 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:01:16.636514600
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:01:21,638 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:01:21.638968400]
+2025-11-10 15:01:26,640 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:01:26.640735600]
+2025-11-10 15:01:31,653 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:01:31.653663500]
+2025-11-10 15:31:46,700 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Starting MsCamionesTransportistasApplication using Java 21.0.3 with PID 22956 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas)
+2025-11-10 15:31:46,705 DEBUG a.e.u.f.m.MsCamionesTransportistasApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-10 15:31:46,705 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:31:48,930 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Started MsCamionesTransportistasApplication in 2.559 seconds (process running for 2.774)
+2025-11-10 15:32:03,935 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:03.935680700]
+2025-11-10 15:32:08,942 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:32:08.941610100
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:32:13,958 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:32:13.958361800
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:32:18,963 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:32:18.963755100
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:32:23,968 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:23.968622300]
+2025-11-10 15:32:28,981 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:28.981080900]
+2025-11-10 15:32:33,984 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:33.984874]
+2025-11-10 15:32:38,992 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:38.992442200]
+2025-11-10 15:32:44,008 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:44.008506200]
+2025-11-10 15:32:49,015 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:49.015471]
+2025-11-10 15:32:54,027 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:32:54.026653800
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:32:59,031 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:32:59.031810]
+2025-11-10 15:33:04,042 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:33:04.042173600
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:33:09,049 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:33:09.049417300
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:33:14,054 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:33:14.054355500]
+2025-11-10 15:33:19,062 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:33:19.062303700]
+2025-11-10 15:33:24,076 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:33:24.076186400]
+2025-11-10 15:33:29,097 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:33:29.097540
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:33:34,101 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:33:34.101332300]
+2025-11-10 15:33:39,110 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:33:39.110423400
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:33:50,261 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Starting MsCamionesTransportistasApplication using Java 21.0.3 with PID 9980 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-camiones-transportistas)
+2025-11-10 15:33:50,266 DEBUG a.e.u.f.m.MsCamionesTransportistasApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-10 15:33:50,267 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-10 15:33:52,598 INFO  a.e.u.f.m.MsCamionesTransportistasApplication [main] - Started MsCamionesTransportistasApplication in 2.675 seconds (process running for 2.882)
+2025-11-10 15:34:04,856 INFO  a.e.u.f.m.c.LogDemoController [http-nio-8082-exec-1] - Log INFO de prueba desde /logs/info
+2025-11-10 15:34:07,609 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:34:07.609686600]
+2025-11-10 15:34:12,612 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:34:12.611936100
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:34:17,627 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-10T15:34:17.626650100
+	at ar.edu.utn.frc.mscamionestransportistas.timer.LogJobs.tick(LogJobs.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-10 15:34:22,630 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:34:22.630560200]
+2025-11-10 15:34:27,639 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:34:27.639458600]
+2025-11-10 15:34:32,654 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [2025-11-10T15:34:32.654390500]

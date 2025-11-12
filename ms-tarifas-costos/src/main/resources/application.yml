@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ms_tarifas_costos
     username: postgres
-    password: 641723
+    password: "cami_2025"
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

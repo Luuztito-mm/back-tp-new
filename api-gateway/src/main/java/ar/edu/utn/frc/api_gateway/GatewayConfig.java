@@ -12,7 +12,7 @@ public class GatewayConfig {
     public RouteLocator customRoutes(RouteLocatorBuilder builder) {
         return builder.routes()
 
-                // --- Camiones y Transportistas ---
+                 // --- Camiones y Transportistas ---
                 .route("camiones", r -> r
                         .path("/camiones/**")
                         // si querés que el micro reciba sin /camiones, descomentá esto:
@@ -37,16 +37,19 @@ public class GatewayConfig {
                 // --- Depósitos ---
                 .route("depositos", r -> r
                         .path("/api/depositos/**")
-                        .filters(f -> f.rewritePath("/api/depositos/(?<remaining>.*)", "/${remaining}"))
+                        .filters(f -> f.rewritePath("/api/depositos/(?<remaining>.*)", "/api/depositos/${remaining}"))
                         .uri("http://localhost:8083"))
 
                 // --- Tarifas y costos ---
                 .route("tarifas", r -> r
                         .path("/api/tarifas/**")
-                        // si querés también podés reescribir igual que arriba
+
+                
+              // si querés también podés reescribir igual que arriba
                         .uri("http://localhost:8085"))
 
                 // NO hace falta una ruta para /gateway/logs/** porque ya lo atiende el controller del gateway
                 .build();
+
     }
 }

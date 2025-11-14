@@ -28,4 +28,9 @@ public class SolicitudController {
     public Solicitud crear(@RequestBody NuevaSolicitudDTO dto) {
         return solicitudService.crearDesdeIds(dto.getClienteId(), dto.getContenedorId());
     }
+
+    @GetMapping("/{id}")
+    public Solicitud getById(@PathVariable("id") Long id) {
+        return solicitudService.buscarPorId(id);
+    }
 }

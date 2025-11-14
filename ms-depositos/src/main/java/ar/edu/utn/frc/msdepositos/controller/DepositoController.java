@@ -19,7 +19,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/depositos")
+@RequestMapping("/depositos")
 @RequiredArgsConstructor
 public class DepositoController {
 
@@ -29,8 +29,8 @@ public class DepositoController {
     @GetMapping("/info")
     public Map<String, String> version() {
         return Map.of(
-            "service", "ms-depositos",
-            "version", "0.0.1"
+                "service", "ms-depositos",
+                "version", "0.0.1"
         );
     }
 
@@ -41,7 +41,7 @@ public class DepositoController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Deposito> obtenerPorId(@PathVariable Long id) {
+    public ResponseEntity<Deposito> obtenerPorId(@PathVariable("id") Long id) {
         return depositoService.buscarPorId(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
@@ -53,13 +53,13 @@ public class DepositoController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Deposito> actualizar(@PathVariable Long id,
+    public ResponseEntity<Deposito> actualizar(@PathVariable("id") Long id,
                                                @Valid @RequestBody Deposito deposito) {
         return ResponseEntity.ok(depositoService.actualizar(id, deposito));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminar(@PathVariable Long id) {
+    public ResponseEntity<Void> eliminar(@PathVariable("id") Long id) {
         depositoService.eliminar(id);
         return ResponseEntity.noContent().build();
     }

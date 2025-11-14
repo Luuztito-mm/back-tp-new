@@ -357,3 +357,43 @@ java.lang.RuntimeException: Tick falló a las 2025-11-13T16:37:02.840879200
 2025-11-13 16:37:07,834 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T16:37:07.834353400]
 2025-11-13 16:37:09,767 ERROR a.e.u.f.m.c.LogDemoController [http-nio-8081-exec-2] - Log ERROR desde ms-clientes-solicitudes: hola
 2025-11-13 16:37:12,837 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T16:37:12.837369100]
+2025-11-13 17:35:30,520 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 14248 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-13 17:35:30,520 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-13 17:35:30,521 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 17:35:33,179 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Started MsClientesSolicitudesApplication in 2.992 seconds (process running for 3.195)
+2025-11-13 17:35:33,183 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T17:35:33.183096500]
+2025-11-13 17:35:38,177 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T17:35:38.177744100]
+2025-11-13 17:35:43,175 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T17:35:43.175736900]
+2025-11-13 17:35:48,181 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T17:35:48.181937500]
+2025-11-13 17:35:53,175 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T17:35:53.175839700]
+2025-11-13 17:35:58,174 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T17:35:58.174756400]
+2025-11-13 19:10:56,269 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 8304 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-13 19:10:56,272 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-13 19:10:56,273 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 19:11:00,581 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Started MsClientesSolicitudesApplication in 4.91 seconds (process running for 5.282)
+2025-11-13 19:11:00,588 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T19:11:00.588848900]
+2025-11-13 19:11:05,588 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T19:11:05.588148400]
+2025-11-13 19:11:10,592 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [ClientesSolicitudes - 2025-11-13T19:11:10.592486900]
+2025-11-13 19:11:15,586 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR
+java.lang.RuntimeException: Tick falló a las 2025-11-13T19:11:15.585312800
+	at ar.edu.utn.frc.msclientessolicitudes.timer.LogJobs.tick(LogJobs.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:83)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-11-13 21:43:40,113 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 17132 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-13 21:43:40,114 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-13 21:43:40,115 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 21:44:29,248 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - Starting MsClientesSolicitudesApplication using Java 21.0.3 with PID 12672 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-clientes-solicitudes)
+2025-11-13 21:44:29,249 DEBUG a.e.u.f.m.MsClientesSolicitudesApplication [main] - Running with Spring Boot v3.4.0, Spring v6.2.0
+2025-11-13 21:44:29,249 INFO  a.e.u.f.m.MsClientesSolicitudesApplication [main] - No active profile set, falling back to 1 default profile: "default"

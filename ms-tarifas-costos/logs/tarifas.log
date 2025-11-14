@@ -75,3 +75,68 @@
 2025-11-13 16:32:27,876 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T16:32:27.876275400]
 2025-11-13 16:32:30,082 ERROR a.e.u.f.m.c.LogDemoController [http-nio-8085-exec-4] - Log ERROR desde ms-tarifas-costos: hol
 2025-11-13 16:32:32,882 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T16:32:32.882940900]
+2025-11-13 17:29:16,495 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 9244 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 17:29:16,495 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-13 17:29:16,496 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 17:29:19,746 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 3.612 seconds (process running for 3.823)
+2025-11-13 17:29:24,754 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T17:29:24.754784300]
+2025-11-13 17:29:29,757 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T17:29:29.757852400]
+2025-11-13 17:29:34,773 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T17:29:34.773592900]
+2025-11-13 17:29:39,787 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T17:29:39.787629700]
+2025-11-13 17:31:42,590 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 5552 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 17:31:42,596 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-13 17:31:42,597 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 17:31:45,780 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 4.263 seconds (process running for 4.484)
+2025-11-13 17:31:50,787 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T17:31:50.787893600]
+2025-11-13 17:31:55,797 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T17:31:55.797818]
+2025-11-13 17:33:31,080 INFO  a.e.u.f.m.MsTarifasCostosApplicationTests [main] - Starting MsTarifasCostosApplicationTests using Java 21.0.3 with PID 21984 (started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 17:33:31,080 DEBUG a.e.u.f.m.MsTarifasCostosApplicationTests [main] - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13 17:33:31,080 INFO  a.e.u.f.m.MsTarifasCostosApplicationTests [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 17:33:35,145 INFO  a.e.u.f.m.MsTarifasCostosApplicationTests [main] - Started MsTarifasCostosApplicationTests in 4.386 seconds (process running for 5.12)
+2025-11-13 17:34:00,772 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 20328 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 17:34:00,773 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13 17:34:00,773 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 17:34:03,408 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 3.004 seconds (process running for 3.224)
+2025-11-13 17:34:08,421 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T17:34:08.421964100]
+2025-11-13 17:34:13,440 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T17:34:13.440733700]
+2025-11-13 17:34:18,447 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T17:34:18.447526500]
+2025-11-13 17:34:23,461 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T17:34:23.461394500]
+2025-11-13 19:14:51,372 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 21284 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 19:14:51,375 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13 19:14:51,376 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 19:14:59,816 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 9.037 seconds (process running for 9.339)
+2025-11-13 19:15:04,836 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T19:15:04.836121100]
+2025-11-13 19:15:09,852 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T19:15:09.852770300]
+2025-11-13 19:26:13,650 INFO  a.e.u.f.m.MsTarifasCostosApplicationTests [main] - Starting MsTarifasCostosApplicationTests using Java 21.0.3 with PID 8344 (started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 19:26:13,651 DEBUG a.e.u.f.m.MsTarifasCostosApplicationTests [main] - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13 19:26:13,652 INFO  a.e.u.f.m.MsTarifasCostosApplicationTests [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 19:26:19,290 INFO  a.e.u.f.m.MsTarifasCostosApplicationTests [main] - Started MsTarifasCostosApplicationTests in 6.155 seconds (process running for 7.22)
+2025-11-13 19:28:02,171 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 10748 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 19:28:02,172 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.5.7, Spring v6.2.12
+2025-11-13 19:28:02,173 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 19:28:06,390 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 4.755 seconds (process running for 4.981)
+2025-11-13 19:28:11,416 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T19:28:11.416648]
+2025-11-13 19:28:16,428 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T19:28:16.428388200]
+2025-11-13 19:45:30,197 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 2188 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 19:45:30,198 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-13 19:45:30,199 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 19:45:35,393 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 5.736 seconds (process running for 6.062)
+2025-11-13 19:45:40,420 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T19:45:40.420230100]
+2025-11-13 19:45:45,427 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T19:45:45.427637600]
+2025-11-13 19:48:17,688 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 15316 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 19:48:17,690 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-13 19:48:17,693 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 19:48:22,556 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 6.162 seconds (process running for 6.878)
+2025-11-13 19:48:25,889 INFO  a.e.u.f.m.c.LogDemoController [http-nio-8085-exec-1] - Log INFO desde ms-tarifas-costos: hola
+2025-11-13 19:48:27,561 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T19:48:27.561752500]
+2025-11-13 19:48:32,570 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T19:48:32.570805500]
+2025-11-13 19:48:37,580 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T19:48:37.580421700]
+2025-11-13 19:48:42,593 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T19:48:42.593430600]
+2025-11-13 19:48:42,733 WARN  a.e.u.f.m.c.LogDemoController [http-nio-8085-exec-2] - Log WARN desde ms-tarifas-costos: hola
+2025-11-13 19:48:47,600 ERROR a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick ERROR [Tarifas - 2025-11-13T19:48:47.600877900]
+2025-11-13 20:01:47,548 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Starting MsTarifasCostosApplication using Java 21.0.3 with PID 22272 (C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos\target\classes started by Luz  Melanie Tito in C:\Users\54266\Desktop\prueba\backend-tpi-grupo7\ms-tarifas-costos)
+2025-11-13 20:01:47,549 DEBUG a.e.u.f.m.MsTarifasCostosApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-13 20:01:47,550 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-13 20:01:54,221 INFO  a.e.u.f.m.MsTarifasCostosApplication [main] - Started MsTarifasCostosApplication in 7.353 seconds (process running for 7.707)
+2025-11-13 20:01:59,216 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T20:01:59.216678600]
+2025-11-13 20:02:04,233 INFO  a.e.u.f.m.timer.LogJobs [scheduling-1] - Tick OK [Tarifas - 2025-11-13T20:02:04.233076500]

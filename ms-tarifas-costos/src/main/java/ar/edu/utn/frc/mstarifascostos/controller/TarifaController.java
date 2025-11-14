@@ -18,7 +18,7 @@ import ar.edu.utn.frc.mstarifascostos.model.Tarifa;
 import ar.edu.utn.frc.mstarifascostos.repository.TarifaRepository;
 
 @RestController
-@RequestMapping("/api/tarifas")
+@RequestMapping("/tarifas")
 public class TarifaController {
 
     @Autowired
@@ -32,7 +32,7 @@ public class TarifaController {
 
     // Obtener una tarifa por ID
     @GetMapping("/{id}")
-    public ResponseEntity<Tarifa> obtenerPorId(@PathVariable Long id) {
+    public ResponseEntity<Tarifa> obtenerPorId(@PathVariable("id") Long id) {
         Tarifa tarifa = tarifaRepository.findById(id).orElse(null);
         if (tarifa == null) {
             return ResponseEntity.notFound().build();
@@ -49,7 +49,8 @@ public class TarifaController {
 
     // Actualizar una tarifa existente
     @PutMapping("/{id}")
-    public ResponseEntity<Tarifa> actualizar(@PathVariable Long id, @RequestBody Tarifa datosActualizados) {
+    public ResponseEntity<Tarifa> actualizar(@PathVariable("id") Long id,
+                                             @RequestBody Tarifa datosActualizados) {
         return tarifaRepository.findById(id)
                 .map(tarifa -> {
                     tarifa.setTipoServicio(datosActualizados.getTipoServicio());
@@ -63,7 +64,7 @@ public class TarifaController {
 
     // Eliminar una tarifa
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> eliminar(@PathVariable Long id) {
+    public ResponseEntity<Void> eliminar(@PathVariable("id") Long id) {
         if (!tarifaRepository.existsById(id)) {
             return ResponseEntity.notFound().build();
         }
@@ -71,10 +72,10 @@ public class TarifaController {
         return ResponseEntity.noContent().build();
     }
 
-    // Calcular costo total de un viaje o tramo
+    // Calcular costo total
     @GetMapping("/{id}/calcular")
     public ResponseEntity<Double> calcularCosto(
-            @PathVariable Long id,
+            @PathVariable("id") Long id,
             @RequestParam double distanciaKm) {
 
         Tarifa tarifa = tarifaRepository.findById(id).orElse(null);

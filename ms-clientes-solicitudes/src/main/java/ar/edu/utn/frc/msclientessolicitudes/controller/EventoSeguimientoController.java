@@ -25,7 +25,8 @@ public class EventoSeguimientoController {
     }
 
     @GetMapping("/solicitud/{solicitudId}")
-    public List<EventoSeguimiento> listar(@PathVariable Long solicitudId) {
+    public List<EventoSeguimiento> listar(@PathVariable("solicitudId") Long solicitudId) {
         return service.porSolicitud(solicitudId);
     }
+
 }

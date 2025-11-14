@@ -1,0 +1,42 @@
+services:
+  api-gateway:
+    image: api-gateway-grupo7
+    container_name: api-gateway-grupo7
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ms-camiones
+      - ms-clientes
+      - ms-depositos
+      - ms-rutas-tramos
+      - ms-tarifas-costos
+
+  ms-camiones:
+    image: ms-camiones-grupo7
+    container_name: ms-camiones-grupo7
+    ports:
+      - "8082:8082"
+
+  ms-clientes:
+    image: ms-clientes-grupo7
+    container_name: ms-clientes-grupo7
+    ports:
+      - "8081:8081"
+
+  ms-depositos:
+    image: ms-depositos-grupo7
+    container_name: ms-depositos-grupo7
+    ports:
+      - "8083:8083"
+
+  ms-rutas-tramos:
+    image: ms-rutas-tramos-grupo7
+    container_name: ms-rutas-tramos-grupo7
+    ports:
+      - "8084:8084"
+
+  ms-tarifas-costos:
+    image: ms-tarifas-costos-grupo7
+    container_name: ms-tarifas-costos-grupo7
+    ports:
+      - "8085:8085"

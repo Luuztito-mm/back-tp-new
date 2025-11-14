@@ -20,6 +20,11 @@ public class SolicitudService {
         return solicitudRepository.findAll();
     }
 
+    public Solicitud buscarPorId(Long id) {
+        return solicitudRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Solicitud no encontrada con id " + id));
+    }
+
     // este es el que usa el controller
     public Solicitud crearDesdeIds(Long clienteId, Long contenedorId) {
         Solicitud s = new Solicitud();

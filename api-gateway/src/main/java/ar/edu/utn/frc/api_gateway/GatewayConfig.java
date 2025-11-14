@@ -15,9 +15,7 @@ public class GatewayConfig {
                  // --- Camiones y Transportistas ---
                 .route("camiones", r -> r
                         .path("/camiones/**")
-                        // si querés que el micro reciba sin /camiones, descomentá esto:
-                        .filters(f -> f.rewritePath("/camiones/(?<remaining>.*)", "/${remaining}"))
-                        .uri("http://localhost:8082"))
+                        .uri("http://host.docker.internal:8082"))
 
                 // --- Clientes y Solicitudes ---
                 .route("clientes-solicitudes", r -> r
@@ -26,31 +24,25 @@ public class GatewayConfig {
                                 "/clientes/**",
                                 "/eventos-seguimiento/**"
                         )
-                        // acá sí hay que sacar el prefijo correspondiente
-                        .filters(f -> f
-                                .rewritePath("/solicitudes/(?<remaining>.*)", "/${remaining}")
-                                .rewritePath("/clientes/(?<remaining>.*)", "/${remaining}")
-                                .rewritePath("/eventos-seguimiento/(?<remaining>.*)", "/${remaining}")
-                        )
-                        .uri("http://localhost:8081"))
+                        .uri("http://host.docker.internal:8081"))
 
-                        // --- Depósitos ---
+                // --- Depósitos ---
                 .route("depositos", r -> r
-                        .path("/depositos/**")
-                        .filters(f -> f.rewritePath("/depositos/(?<remaining>.*)", "/${remaining}"))
-                        .uri("http://localhost:8083"))
-                // --- Tarifas y costos ---
-                .route("tarifas", r -> r
+                        .path("/depositos/**")     // lo que ve "afuera" por el gateway
+                        .uri("http://host.docker.internal:8083")) // micro ms-depositos en Docker
+                // --- Tarifas y Costos ---
+                .route("tarifas-costos", r -> r
                         .path("/tarifas/**")
-                        .filters(f -> f.rewritePath("/tarifas/(?<remaining>.*)", "/${remaining}"))
-              // si querés también podés reescribir igual que arriba
-                        .uri("http://localhost:8085"))
-                // --- Rutas y Tramos ---
-                .route("rutas", r -> r
-                        .path("/rutas/**")
-                        .filters(f -> f.rewritePath("/rutas/(?<remaining>.*)", "/${remaining}"))
-                        .uri("http://localhost:8084"))
+                        .uri("http://host.docker.internal:8085"))
 
+                // --- Rutas y Tramos ---
+                .route("rutas-tramos", r -> r
+                        .path(
+                                "/rutas/**",
+                                "/tramos/**"
+                        )
+                        .uri("http://host.docker.internal:8084")
+                )
 
 
                 // NO hace falta una ruta para /gateway/logs/** porque ya lo atiende el controller del gateway

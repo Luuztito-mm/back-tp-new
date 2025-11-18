@@ -8,16 +8,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * Entidad mínima de Ruta, alineada con el DER:
- *   - id
- *   - solicitud_id
- *   - asignada
- *   - cantidad_tramos
- *   - cantidad_depositos
+ * Entidad Ruta, alineada con la tabla:
  *
- * Se agrega la tabla "ruta".
+ * CREATE TABLE ruta (
+ *   id SERIAL PRIMARY KEY,
+ *   solicitud_id       INT      NOT NULL,
+ *   asignada           BOOLEAN  NOT NULL,
+ *   cantidad_tramos    INT      NOT NULL,
+ *   cantidad_depositos INT      NOT NULL
+ * );
  */
-
 @Entity
 @Table(name = "ruta")
 @Getter
@@ -31,20 +31,22 @@ public class Ruta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /** Id de la solicitud asociada (requerido por el modelo). */
+    /** Id de la solicitud asociada (viene de ms-clientes-solicitudes). */
     @Column(name = "solicitud_id", nullable = false)
     private Long solicitudId;
 
-    /** Indica si la ruta fue asignada/confirmada definitivamente. */
+    /** Indica si la ruta ya fue confirmada/asignada. */
     @Builder.Default
     @Column(nullable = false)
     private Boolean asignada = false;
 
-    /** Cantidad de tramos que componen esta ruta (puede calcularse luego). */
-    @Column(name = "cantidad_tramos")
-    private Integer cantidadTramos;
+    /** Cantidad de tramos que componen esta ruta. */
+    @Builder.Default
+    @Column(name = "cantidad_tramos", nullable = false)
+    private Integer cantidadTramos = 0;
 
-    /** Cantidad de depósitos involucrados (puede calcularse luego). */
-    @Column(name = "cantidad_depositos")
-    private Integer cantidadDepositos;
+    /** Cantidad de depósitos involucrados en la ruta. */
+    @Builder.Default
+    @Column(name = "cantidad_depositos", nullable = false)
+    private Integer cantidadDepositos = 0;
 }

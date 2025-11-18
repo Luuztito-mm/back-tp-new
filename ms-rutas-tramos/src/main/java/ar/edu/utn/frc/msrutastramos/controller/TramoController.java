@@ -5,6 +5,7 @@ import ar.edu.utn.frc.msrutastramos.service.TramoService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @RestController
@@ -17,32 +18,62 @@ public class TramoController {
         this.tramoService = tramoService;
     }
 
+    // ------------------------------------------------------------
+    // GET /tramos?rutaId&estado  (ambos filtros opcionales)
+    // ------------------------------------------------------------
     @GetMapping
-    public ResponseEntity<List<Tramo>> listar() {
-        return ResponseEntity.ok(tramoService.listar());
+    public ResponseEntity<List<Tramo>> listar(
+            @RequestParam(name = "rutaId", required = false) Long rutaId,
+            @RequestParam(name = "estado", required = false) String estado) {
+
+        List<Tramo> tramos = tramoService.listar(rutaId, estado);
+        return ResponseEntity.ok(tramos);
     }
 
+    // ------------------------------------------------------------
+    // POST /tramos  (crear tramo)
+    // ------------------------------------------------------------
     @PostMapping
     public ResponseEntity<Tramo> crear(@RequestBody Tramo tramo) {
-        return ResponseEntity.ok(tramoService.crear(tramo));
+        Tramo creado = tramoService.crear(tramo);
+        return ResponseEntity.ok(creado);
     }
 
+    // ------------------------------------------------------------
+    // POST /tramos/{id}/asignar-camion?camionId=123
+    // ------------------------------------------------------------
     @PostMapping("/{id}/asignar-camion")
     public ResponseEntity<Tramo> asignarCamion(@PathVariable("id") Long id,
-                                            @RequestParam("camionId") Long camionId) {
-        return ResponseEntity.ok(tramoService.asignarCamion(id, camionId));
+                                               @RequestParam("camionId") Long camionId) {
+        Tramo actualizado = tramoService.asignarCamion(id, camionId);
+        return ResponseEntity.ok(actualizado);
     }
 
-
+    // ------------------------------------------------------------
+    // POST /tramos/{id}/iniciar
+    // ------------------------------------------------------------
     @PostMapping("/{id}/iniciar")
     public ResponseEntity<Tramo> iniciar(@PathVariable("id") Long id) {
-        return ResponseEntity.ok(tramoService.iniciar(id));
+        Tramo actualizado = tramoService.iniciar(id);
+        return ResponseEntity.ok(actualizado);
     }
 
-
+    // ------------------------------------------------------------
+    // POST /tramos/{id}/finalizar
+    // ------------------------------------------------------------
     @PostMapping("/{id}/finalizar")
     public ResponseEntity<Tramo> finalizar(@PathVariable("id") Long id) {
-        return ResponseEntity.ok(tramoService.finalizar(id));
+        Tramo actualizado = tramoService.finalizar(id);
+        return ResponseEntity.ok(actualizado);
     }
 
+    // ------------------------------------------------------------
+    // PUT /tramos/{id}/costo-real?costoReal=15000.50
+    // ------------------------------------------------------------
+    @PutMapping("/{id}/costo-real")
+    public ResponseEntity<Tramo> actualizarCostoReal(@PathVariable("id") Long id,
+                                                     @RequestParam("costoReal") BigDecimal costoReal) {
+        Tramo actualizado = tramoService.actualizarCostoReal(id, costoReal);
+        return ResponseEntity.ok(actualizado);
+    }
 }

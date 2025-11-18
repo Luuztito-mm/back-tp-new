@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class RutaRespuestaDTO {
-    private double distanciaTotal;
-    private double duracionTotal;
+
+    private double distanciaTotal; // km
+    private double duracionTotal;  // minutos
 }

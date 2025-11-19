@@ -22,6 +22,7 @@ public class GatewayConfig {
                         .path(
                                 "/solicitudes/**",
                                 "/clientes/**",
+                                "/contenedores/**",
                                 "/eventos-seguimiento/**"
                         )
                         .uri("http://host.docker.internal:8081"))

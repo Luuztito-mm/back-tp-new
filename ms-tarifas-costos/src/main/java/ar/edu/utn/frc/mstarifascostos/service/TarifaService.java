@@ -4,6 +4,8 @@ import ar.edu.utn.frc.mstarifascostos.exception.BadRequestException;
 import ar.edu.utn.frc.mstarifascostos.exception.ResourceNotFoundException;
 import ar.edu.utn.frc.mstarifascostos.model.Tarifa;
 import ar.edu.utn.frc.mstarifascostos.model.dto.DistanciaDTO;
+import ar.edu.utn.frc.mstarifascostos.model.dto.CalcularTramoRequest;
+import ar.edu.utn.frc.mstarifascostos.model.dto.CalcularTramoResponse;
 import ar.edu.utn.frc.mstarifascostos.repository.TarifaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,7 +19,7 @@ import java.util.List;
 public class TarifaService {
 
     private final TarifaRepository tarifaRepository;
-    private final RutasTramosClient rutasTramosClient;   // depende de ms-rutas-tramos
+    private final RutasTramosClient rutasTramosClient;
 
     // ===================== CRUD =====================
 
@@ -106,6 +108,109 @@ public class TarifaService {
         Tarifa tarifa = buscarPorId(tarifaId);
         return calcularCosto(tarifa, distanciaKm, cantidadTramos);
     }
+
+
+    // ===================== CÁLCULO DE TRAMO  =====================
+
+    public CalcularTramoResponse calcularTramo(CalcularTramoRequest request) {
+
+        if (request == null) {
+            throw new BadRequestException("El cuerpo de la petición no puede ser nulo.");
+        }
+        if (request.getOrigen() == null || request.getDestino() == null) {
+            throw new BadRequestException("Origen y destino son obligatorios.");
+        }
+        if (request.getContenedor() == null) {
+            throw new BadRequestException("Los datos del contenedor son obligatorios.");
+        }
+        if (request.getEstadiaDias() < 0) {
+            throw new BadRequestException("La cantidad de días de estadía no puede ser negativa.");
+        }
+
+        // 1) Peso y volumen del contenedor
+        BigDecimal peso = BigDecimal
+                .valueOf(request.getContenedor().getPesoKg())
+                .setScale(2, RoundingMode.HALF_UP);
+
+        BigDecimal volumen = BigDecimal
+                .valueOf(request.getContenedor().getVolumenM3())
+                .setScale(3, RoundingMode.HALF_UP);
+
+        // 2) Buscar una tarifa cuyo rango contenga ese peso y volumen
+        List<Tarifa> tarifas = tarifaRepository.findAll();
+
+        Tarifa tarifa = tarifas.stream()
+                .filter(t -> t.getRangoPesoMin() != null
+                        && t.getRangoPesoMax() != null
+                        && t.getRangoVolumenMin() != null
+                        && t.getRangoVolumenMax() != null
+                        && peso.compareTo(t.getRangoPesoMin()) >= 0
+                        && peso.compareTo(t.getRangoPesoMax()) <= 0
+                        && volumen.compareTo(t.getRangoVolumenMin()) >= 0
+                        && volumen.compareTo(t.getRangoVolumenMax()) <= 0
+                )
+                .findFirst()
+                .orElseThrow(() -> new BadRequestException(
+                        "No existe una tarifa configurada para peso="
+                                + peso + " kg y volumen=" + volumen + " m3"
+                ));
+
+        // 3) Pedir distancia y duración a ms-rutas-tramos (OSRM)
+        DistanciaDTO dto = rutasTramosClient.obtenerDistancia(
+                request.getOrigen().getLat(),
+                request.getOrigen().getLon(),
+                request.getDestino().getLat(),
+                request.getDestino().getLon()
+        );
+
+        BigDecimal distanciaKm = BigDecimal
+                .valueOf(dto.getDistanciaMetros())
+                .divide(BigDecimal.valueOf(1000), 3, RoundingMode.HALF_UP);
+
+        // 4) Costo base usando la lógica que ya tenés (1 tramo)
+        double costoBase = calcularCosto(tarifa, distanciaKm, 1);
+        BigDecimal costoBaseBD = BigDecimal
+                .valueOf(costoBase)
+                .setScale(2, RoundingMode.HALF_UP);
+
+        // (Opcional y simple) sumarle algo por estadía y camión — para no complicar:
+        BigDecimal extra = BigDecimal.ZERO;
+
+        if (request.getCamion() != null) {
+            // Ejemplo MUY simple: costoBaseKm * distancia
+            BigDecimal costoCamion = BigDecimal
+                    .valueOf(request.getCamion().getCostoBaseKm())
+                    .max(BigDecimal.ZERO)
+                    .multiply(distanciaKm);
+            extra = extra.add(costoCamion);
+        }
+
+        if (request.getEstadiaDias() > 0) {
+            // Ejemplo: usamos cargoGestionPorTramo * días de estadía
+            extra = extra.add(
+                    tarifa.getCargoGestionPorTramo()
+                            .multiply(BigDecimal.valueOf(request.getEstadiaDias()))
+            );
+        }
+
+        BigDecimal total = costoBaseBD.add(extra).setScale(2, RoundingMode.HALF_UP);
+
+        // 5) Armamos el DTO de respuesta
+        long duracionMin = Math.round(dto.getDuracionSegundos() / 60.0);
+
+        CalcularTramoResponse.TarifaBasicaDTO tarifaDTO =
+                new CalcularTramoResponse.TarifaBasicaDTO(tarifa.getId(), tarifa.getNombre());
+
+        CalcularTramoResponse response = new CalcularTramoResponse();
+        response.setDistanciaKm(distanciaKm.doubleValue());
+        response.setDuracionEstMin(duracionMin);
+        response.setTarifaAplicada(tarifaDTO);
+        response.setCostoAproximado(total.doubleValue());
+
+        return response;
+    }
+
+
 
     // ===================== PRIVADOS =====================
 

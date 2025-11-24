@@ -53,6 +53,16 @@ services:
     networks:
       - backend-net
 
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+    command: ["start-dev", "--http-port=8080", "--hostname-strict=false"]
+    ports:
+      - "8088:8080"
+
 networks:
   backend-net:
     driver: bridge

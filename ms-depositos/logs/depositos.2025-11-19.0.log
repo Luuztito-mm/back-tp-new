@@ -1,0 +1,201 @@
+2025-11-19 06:51:32,410 INFO  o.h.validator.internal.util.Version [background-preinit] - HV000001: Hibernate Validator 8.0.1.Final
+2025-11-19 06:51:32,479 INFO  a.e.u.f.m.MsDepositosApplication [main] - Starting MsDepositosApplication using Java 21.0.9 with PID 16040 (C:\Users\natal\Desktop\Materias 2025\Backend\backend-tp-orsrm\ms-depositos\target\classes started by natalia in C:\Users\natal\Desktop\Materias 2025\Backend\backend-tp-orsrm\ms-depositos)
+2025-11-19 06:51:32,479 DEBUG a.e.u.f.m.MsDepositosApplication [main] - Running with Spring Boot v3.3.4, Spring v6.1.13
+2025-11-19 06:51:32,480 INFO  a.e.u.f.m.MsDepositosApplication [main] - No active profile set, falling back to 1 default profile: "default"
+2025-11-19 06:51:33,508 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [main] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-19 06:51:33,566 INFO  o.s.d.r.c.RepositoryConfigurationDelegate [main] - Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2025-11-19 06:51:34,333 INFO  o.s.b.w.e.tomcat.TomcatWebServer [main] - Tomcat initialized with port 8083 (http)
+2025-11-19 06:51:34,344 INFO  o.a.coyote.http11.Http11NioProtocol [main] - Initializing ProtocolHandler ["http-nio-8083"]
+2025-11-19 06:51:34,348 INFO  o.a.catalina.core.StandardService [main] - Starting service [Tomcat]
+2025-11-19 06:51:34,349 INFO  o.a.catalina.core.StandardEngine [main] - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2025-11-19 06:51:34,430 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [main] - Initializing Spring embedded WebApplicationContext
+2025-11-19 06:51:34,431 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext [main] - Root WebApplicationContext: initialization completed in 1893 ms
+2025-11-19 06:51:34,744 INFO  o.h.jpa.internal.util.LogHelper [main] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-19 06:51:34,810 INFO  org.hibernate.Version [main] - HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-11-19 06:51:34,853 INFO  o.h.c.i.RegionFactoryInitiator [main] - HHH000026: Second-level cache disabled
+2025-11-19 06:51:35,156 INFO  o.s.o.j.p.SpringPersistenceUnitInfo [main] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-19 06:51:35,191 INFO  com.zaxxer.hikari.HikariDataSource [main] - HikariPool-1 - Starting...
+2025-11-19 06:51:36,359 WARN  o.h.e.jdbc.spi.SqlExceptionHelper [main] - SQL Error: 0, SQLState: 28000
+2025-11-19 06:51:36,360 ERROR o.h.e.jdbc.spi.SqlExceptionHelper [main] - FATAL: no hay una l�nea en pg_hba.conf para �192.168.1.7�, usuario �postgres�, base de datos �ms_depositos�, sin cifrado
+2025-11-19 06:51:36,362 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator [main] - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [FATAL: no hay una l�nea en pg_hba.conf para �192.168.1.7�, usuario �postgres�, base de datos �ms_depositos�, sin cifrado] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:292)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at ar.edu.utn.frc.msdepositos.MsDepositosApplication.main(MsDepositosApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: FATAL: no hay una l�nea en pg_hba.conf para �192.168.1.7�, usuario �postgres�, base de datos �ms_depositos�, sin cifrado
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:711)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:213)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 35 common frames omitted
+	Suppressed: org.postgresql.util.PSQLException: FATAL: no hay una l�nea en pg_hba.conf para �192.168.1.7�, usuario �postgres�, base de datos �ms_depositos�, sin cifrado
+		at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:711)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:213)
+		at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:277)
+		... 49 common frames omitted
+2025-11-19 06:51:36,408 WARN  org.hibernate.orm.deprecation [main] - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-19 06:51:37,273 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator [main] - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-19 06:51:37,276 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [main] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-19 06:51:37,716 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-19 06:51:38,348 INFO  o.s.b.a.e.web.EndpointLinksResolver [main] - Exposing 2 endpoints beneath base path '/actuator'
+2025-11-19 06:51:38,396 INFO  o.a.coyote.http11.Http11NioProtocol [main] - Starting ProtocolHandler ["http-nio-8083"]
+2025-11-19 06:51:38,422 INFO  o.s.b.w.e.tomcat.TomcatWebServer [main] - Tomcat started on port 8083 (http) with context path '/'
+2025-11-19 06:51:38,437 INFO  a.e.u.f.m.MsDepositosApplication [main] - Started MsDepositosApplication in 6.569 seconds (process running for 6.933)
+2025-11-19 06:51:43,460 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:51:43.460703900]
+2025-11-19 06:51:53,470 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:51:53.470720400]
+2025-11-19 06:52:03,484 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:52:03.484250300]
+2025-11-19 06:52:13,501 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:52:13.501976900]
+2025-11-19 06:52:23,515 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:52:23.515302500]
+2025-11-19 06:52:33,524 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:52:33.524091500]
+2025-11-19 06:52:43,532 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:52:43.532758100]
+2025-11-19 06:52:53,547 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:52:53.547995600]
+2025-11-19 06:53:03,565 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:53:03.565371400]
+2025-11-19 06:53:13,576 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:53:13.576309100]
+2025-11-19 06:53:23,584 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:53:23.584373600]
+2025-11-19 06:53:33,592 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:53:33.592405600]
+2025-11-19 06:53:43,602 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:53:43.602595300]
+2025-11-19 06:53:53,612 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:53:53.611682700]
+2025-11-19 06:54:03,625 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:54:03.624559600]
+2025-11-19 06:54:13,632 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:54:13.632532800]
+2025-11-19 06:54:23,643 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:54:23.643527700]
+2025-11-19 06:54:33,646 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:54:33.646011500]
+2025-11-19 06:54:43,655 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:54:43.654432]
+2025-11-19 06:54:53,666 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:54:53.666542900]
+2025-11-19 06:55:03,670 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:55:03.670488]
+2025-11-19 06:55:13,675 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:55:13.675418700]
+2025-11-19 06:55:23,685 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:55:23.685323900]
+2025-11-19 06:55:33,695 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:55:33.695089]
+2025-11-19 06:55:43,700 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:55:43.700629]
+2025-11-19 06:55:53,711 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:55:53.711243]
+2025-11-19 06:56:03,715 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:56:03.715025900]
+2025-11-19 06:56:13,727 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:56:13.727299600]
+2025-11-19 06:56:23,738 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:56:23.738492600]
+2025-11-19 06:56:33,750 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:56:33.750037800]
+2025-11-19 06:56:43,759 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:56:43.759571900]
+2025-11-19 06:56:53,761 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:56:53.761664500]
+2025-11-19 06:57:03,766 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:57:03.766533100]
+2025-11-19 06:57:13,774 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:57:13.774171]
+2025-11-19 06:57:23,790 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:57:23.790346800]
+2025-11-19 06:57:33,799 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:57:33.799071]
+2025-11-19 06:57:43,809 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:57:43.809825300]
+2025-11-19 06:57:53,818 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:57:53.818014]
+2025-11-19 06:58:03,825 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:58:03.825709200]
+2025-11-19 06:58:13,835 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:58:13.834679300]
+2025-11-19 06:58:23,846 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:58:23.846663500]
+2025-11-19 06:58:33,850 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:58:33.850336500]
+2025-11-19 06:58:43,863 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:58:43.863356300]
+2025-11-19 06:58:53,870 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:58:53.869421400]
+2025-11-19 06:59:03,886 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:59:03.886087]
+2025-11-19 06:59:13,888 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:59:13.888145800]
+2025-11-19 06:59:23,891 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:59:23.891958200]
+2025-11-19 06:59:33,898 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:59:33.898984]
+2025-11-19 06:59:43,907 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:59:43.906402900]
+2025-11-19 06:59:53,919 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T06:59:53.919614900]
+2025-11-19 07:00:03,935 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:00:03.935089700]
+2025-11-19 07:00:13,947 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:00:13.947360100]
+2025-11-19 07:00:23,952 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:00:23.952906800]
+2025-11-19 07:00:33,969 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:00:33.969850]
+2025-11-19 07:00:43,987 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:00:43.987099300]
+2025-11-19 07:00:53,998 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:00:53.998229800]
+2025-11-19 07:01:04,010 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:01:04.010404900]
+2025-11-19 07:01:14,019 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:01:14.019995400]
+2025-11-19 07:01:24,036 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:01:24.036431]
+2025-11-19 07:01:34,041 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:01:34.041893]
+2025-11-19 07:01:44,056 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:01:44.056902800]
+2025-11-19 07:01:54,069 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:01:54.069024400]
+2025-11-19 07:02:04,085 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:02:04.085296200]
+2025-11-19 07:02:14,093 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:02:14.093154]
+2025-11-19 07:02:24,105 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:02:24.105975500]
+2025-11-19 07:02:34,120 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:02:34.120121700]
+2025-11-19 07:02:44,124 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:02:44.124561800]
+2025-11-19 07:02:54,141 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:02:54.141756900]
+2025-11-19 07:03:04,145 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:03:04.145810]
+2025-11-19 07:03:14,156 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:03:14.156005600]
+2025-11-19 07:03:24,173 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:03:24.173366300]
+2025-11-19 07:03:34,188 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:03:34.188897800]
+2025-11-19 07:03:44,198 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:03:44.198686600]
+2025-11-19 07:03:54,200 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:03:54.199652200]
+2025-11-19 07:04:04,213 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:04:04.213410800]
+2025-11-19 07:04:14,226 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:04:14.226093600]
+2025-11-19 07:04:24,230 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:04:24.230741800]
+2025-11-19 07:04:34,243 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:04:34.243503400]
+2025-11-19 07:04:44,252 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:04:44.252386500]
+2025-11-19 07:04:54,258 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:04:54.258999200]
+2025-11-19 07:05:04,275 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:05:04.275961200]
+2025-11-19 07:05:14,284 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:05:14.284646300]
+2025-11-19 07:05:24,295 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:05:24.294672]
+2025-11-19 07:05:34,305 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:05:34.305716500]
+2025-11-19 07:05:44,319 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:05:44.319328]
+2025-11-19 07:05:54,336 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:05:54.335411300]
+2025-11-19 07:06:04,350 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:06:04.350318800]
+2025-11-19 07:06:14,365 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:06:14.365881]
+2025-11-19 07:06:24,372 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:06:24.372187900]
+2025-11-19 07:06:34,378 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:06:34.377960400]
+2025-11-19 07:06:44,385 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:06:44.385213800]
+2025-11-19 07:06:54,398 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:06:54.398727900]
+2025-11-19 07:07:04,401 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:07:04.401221300]
+2025-11-19 07:07:14,410 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:07:14.410432800]
+2025-11-19 07:07:24,425 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:07:24.425299100]
+2025-11-19 07:07:34,429 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:07:34.429513600]
+2025-11-19 07:07:44,444 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:07:44.444273500]
+2025-11-19 07:07:54,449 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:07:54.449503300]
+2025-11-19 07:08:04,465 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:08:04.465417200]
+2025-11-19 07:08:14,481 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:08:14.481970900]
+2025-11-19 07:08:24,501 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:08:24.501150800]
+2025-11-19 07:08:34,504 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:08:34.504601100]
+2025-11-19 07:08:44,512 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:08:44.512601900]
+2025-11-19 07:08:54,526 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:08:54.526811100]
+2025-11-19 07:09:04,542 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:09:04.542497200]
+2025-11-19 07:09:14,558 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:09:14.558102200]
+2025-11-19 07:09:24,566 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:09:24.564759200]
+2025-11-19 07:09:34,581 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:09:34.581932300]
+2025-11-19 07:09:44,595 INFO  a.e.u.frc.msdepositos.timer.LogJobs [scheduling-1] - Depositos heartbeat [2025-11-19T07:09:44.595963200]

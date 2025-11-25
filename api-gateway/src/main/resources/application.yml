@@ -27,7 +27,7 @@ spring:
           filters:
             - RewritePath=/api/depositos/(?<remaining>.*), /${remaining}
 
-        # --- Rutas / Tramos / Seguimiento (NUEVO) ---
+        # --- Rutas / Tramos / Seguimiento ---
         - id: ms-rutas-tramos
           uri: http://localhost:8084
           predicates:
